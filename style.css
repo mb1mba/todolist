@@ -1,0 +1,157 @@
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+body{
+    margin:0;
+    background: #202020;
+}
+
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputContent{
+    width: 500px;
+    background:#393e46;
+    border: none;
+    color:white;
+    font-size: 25px;
+    margin-top:20px;
+}
+
+
+#inputContent,
+.taskToDo{
+    padding: 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:disabled{
+    cursor:not-allowed;
+}
+
+button:enabled,
+.td,
+.errorMessage
+{
+    cursor:pointer;
+}
+
+#addBtn{
+    border-radius: 50%;
+    width: 35px;
+    margin-left:10px;
+    border: none;
+    background:#ffb703;
+    color: black;
+    font-size:25px;
+    border-top:0;
+}
+
+#listElement{
+    padding-left:0px;
+}
+
+.taskToDo{
+    background-color: #333533;
+}
+
+.task_click,
+.taskToDo{
+    width:545px ;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+
+.task_click,
+.taskToDo
+{
+    font-size: 30px;
+}
+
+.deleteBtn:hover{
+    color:red
+}
+
+.checkboxTask{
+    height: 100px;
+    width: 20px;
+}
+
+.myListContent{
+    margin-top: 10px;
+}
+
+footer{
+    position: absolute;
+}
+
+.task_click,
+.taskToDo,
+#deleteAllTaskBtn,
+#addBtn,
+#inputContent
+{
+    height: 35px;
+}
+
+.td{
+    padding-left: 10px;
+}
+
+.taskToDo:hover{
+    opacity: 0.9;
+}
+
+.td:hover{
+    color:#ffffff
+}
+
+.task_click{
+    background-color: #90a955;
+}
+
+.errorMessage{
+    display: none;
+    background-color: #ffd6d6;
+    border: 2px solid #ff9b9c;
+    text-align: center;
+    border-radius: 5px;
+    color: #cc0033;
+    padding: 10px 20px;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.errorMessage:hover{
+    opacity: 0.8;
+}
+
+.taskRemove{
+    background-color:#90a955;
+    border: 2px solid #748747;
+    color: rgb(8, 121, 8)
+
+}
+
+.is-visible{
+    display:block;
+}
